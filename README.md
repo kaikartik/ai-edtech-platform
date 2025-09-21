@@ -107,7 +107,7 @@ Visit [http://localhost:3000](http://localhost:3000) or your configured port.
 
 ## 📸 Screenshots
 
-> _Add screenshots or GIFs of your platform here!_
+> 
 
 ---
 
