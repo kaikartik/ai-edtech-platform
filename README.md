@@ -108,11 +108,11 @@ Visit [http://localhost:3000](http://localhost:3000) or your configured port.
 ## 📸 Screenshots
 
 >## 📸 Screenshots
-
+![Home Page](Ai_EdTech.png)
+![Doubt Bot](chatbot.png)
 ![Login Page](loginpage.png)
-![Doubt Bot](screenshots/3d-professor.png)
-![Custom Course Generation](screenshots/course-generation.png)
-> loginpage.png
+![Courses](courses.png)
+
 
 ---
 
