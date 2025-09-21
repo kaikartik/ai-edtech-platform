@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript Essentials — Module 3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 3: JavaScript Essentials</h1>
+                <div class="small">DOM, events, async, closures</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Key topics</h2>
+                <ul>
+                    <li>Variables & scopes (let, const, var)</li>
+                    <li>Functions, closures, and callbacks</li>
+                    <li>Promises & async/await</li>
+                    <li>DOM manipulation & event handling</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Examples</h2>
+                <h3>Fetch data (async/await)</h3>
+                <pre class="code">async function getJson(url){
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Network error');
+  return await res.json();
+}</pre>
+
+                <h3>Closure example</h3>
+                <pre class="code">function makeCounter(){
+  let count = 0;
+  return function(){ return ++count; }
+}
+const c = makeCounter(); c(); // 1</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Create a todo list app that stores items in localStorage.</li>
+                    <li>Write a debounce function and explain when to use it.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Hints</h2>
+                <p>Debounce delays a function until after a pause in events; implement with setTimeout and clearTimeout
+                    (store timer id in closure).</p>
+            </section>
+
+            <div class="navlinks">
+                <a href="design.html">Next: Responsive Design</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

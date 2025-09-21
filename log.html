@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="log.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Login Form -->
+    <form action="connect.php" method="post">
+        <div id="loginbox">
+            <img id="img1" src="1-removebg-preview.png" alt="login image">
+            <p id="text1">Welcome to AI EdTech Login to have full access to all features.</p>
+            <input id="input1" name="phone" type="text" placeholder="Mobile" required>
+            <i id="iconphn" class="ri-phone-line"></i>
+            <input id="input2" name="password" type="password" placeholder="Password" required>
+            <p id="frgpass">Forgot Password</p>
+            <button type="submit" id="box1">Login to my account</button>
+            <button type="button" id="crtacc">Create Account</button>
+        </div>
+    </form>
+
+    <!-- Registration Form -->
+    <form action="connect.php" method="post">
+        <div id="regbox">
+            <button type="button" id="back"><i class="ri-arrow-left-line"></i></button>
+            <img id="img2" src="2-removebg-preview.png" alt="register image">
+            <p id="text2">Welcome to AI EdTech Sign up to get the access to the courses.</p>
+            <input id="input_1" name="reg_mobile" type="text" placeholder="Mobile" required>
+            <i id="icon_phn" class="ri-phone-line"></i>
+            <input id="useremail" name="useremail" type="email" placeholder="Email Address">
+            <i id="mail2" class="ri-mail-line"></i>
+            <input id="input_2" name="reg_password" type="password" placeholder="Password" required>
+            <input id="confirm" name="Conpass" type="password" placeholder="Confirm Password" required>
+
+
+            <button type="submit" id="reg">Register a new account</button>
+            <button type="button" id="log">Login</button>
+
+        </div>
+    </form>
+
+    <!-- Reset Password Form -->
+    <form action="connect.php" method="post">
+        <div id="reset">
+            <button type="button" id="back1"><i class="ri-arrow-left-line"></i></button>
+            <img id="img3" src="3-removebg-preview.png" alt="reset image">
+            <p id="text3">Reset Your Password</p>
+            <input id="phoneinp" name="mail" type="email" placeholder="Enter Email" required>
+            <i id="mail" class="ri-mail-line"></i>
+            <button type="submit" id="res">Get OTP</button>
+        </div>
+
+        <script src="log.js"></script>
+</body>
+
+</html>

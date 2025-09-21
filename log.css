@@ -1,0 +1,391 @@
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(to bottom, #9500ff, #FFFFFF);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #loginbox {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        background: white;
+        /* make sure it has a background */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        /* soft shadow */
+    }
+
+    /* Error message styles */
+    .error-message {
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        top: -15px;
+    }
+
+    /* Success message styles */
+    .success-message {
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Informational message styles */
+    .info-message {
+        color: blue;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 10px;
+    }
+
+
+    #regbox {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75);
+    }
+
+    #img2 {
+        position: relative;
+        left: 120px;
+        width: 140px;
+        bottom: 70px;
+    }
+
+    #loginbox p {
+        position: relative;
+        bottom: 100px;
+    }
+
+    #confirm {
+        border-radius: 5px;
+        position: relative;
+        left: 50px;
+        width: 300px;
+        height: 50px;
+    }
+
+    #text1 {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 60px;
+        position: relative;
+        right: 30px;
+        top: 3px;
+        font-size: 20px;
+    }
+
+    #text2 {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 60px;
+        position: relative;
+        bottom: 90px;
+        right: 25px;
+        font-size: 20px;
+    }
+
+    #back {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        background-color: white;
+        width: 40px;
+        height: 30px;
+        font-size: 25px;
+        border: transparent;
+        border-radius: 10px;
+    }
+
+    #icon_phn {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 125px;
+        left: 320px
+    }
+
+    #icon_pass {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 165px;
+        left: 325px;
+    }
+
+    #iconphn {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 45px;
+        left: 320px
+    }
+
+    #icon_conpass {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 188px;
+        left: 325px;
+    }
+
+    #iconpass {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 55px;
+        left: 325px;
+    }
+
+    #input1,
+    #input2 {
+        border: black 1px solid;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        left: 50px;
+        width: 300px;
+        height: 50px;
+    }
+
+    #input2 {
+        bottom: 30px;
+        margin-top: 10px;
+    }
+
+    #input_1,
+    #input_2 {
+        margin-top: 10px;
+        bottom: 90px;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        left: 50px;
+        width: 300px;
+        height: 50px;
+        border: solid black 1px;
+    }
+
+    #confirm,
+    #useremail {
+        margin-top: 10px;
+        bottom: 120px;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        left: 50px;
+        width: 300px;
+        height: 50px;
+        border: black 1px solid;
+    }
+
+    #mail2 {
+        position: relative;
+        bottom: 150px;
+        left: 322px;
+        z-index: 2;
+    }
+
+    #useremail {
+        bottom: 115px;
+    }
+
+    #input_2 {
+        position: relative;
+        bottom: 135px;
+    }
+
+    #confirm {
+        position: relative;
+        bottom: 138px;
+    }
+
+    #frgpass {
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: right;
+        position: relative;
+        right: 20px;
+        color: blue;
+        top: -25px;
+    }
+
+    #img1 {
+        position: relative;
+        left: 50px;
+        width: 300px
+    }
+
+    #box1,
+    #crtacc {
+        bottom: 20px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 10px;
+        height: 50px;
+        border: transparent;
+        background-color: rgb(5, 80, 199);
+    }
+
+    #back1 {
+        background-color: white;
+        position: relative;
+        right: 35px;
+        width: 40px;
+        height: 30px;
+        margin: 5px;
+        font-size: 25px;
+        border: transparent;
+        border-radius: 10px;
+    }
+
+    #crtacc {
+        margin-top: 5px;
+    }
+
+    #reg,
+    #log {
+        bottom: 120px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 10px;
+        height: 50px;
+        border: transparent;
+        background-color: rgb(5, 80, 199);
+    }
+
+    #log {
+        margin-top: 10px;
+    }
+
+    #img3 {
+        position: relative;
+        bottom: 50px;
+        width: 300px;
+        left: 10px;
+    }
+
+    #reset {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        background: white;
+        /* make sure it has a background */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75);
+        /* soft shadow */
+    }
+
+    #text3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 60px;
+        color: black;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+        font-size: 22px;
+    }
+
+    #phoneinp {
+        margin: 10px;
+        bottom: 25px;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        width: 300px;
+        height: 50px;
+        border: black 1px solid;
+    }
+
+    #res {
+        bottom: 50px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        left: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 10px;
+        height: 50px;
+        border: transparent;
+        background-color: rgb(5, 80, 199);
+    }
+
+    #mail {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 100px;
+        left: 280px;
+    }
+
+    #newpass,
+    #connewpass {
+        display: none;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        left: 5px;
+        margin: 5px;
+        width: 300px;
+        height: 50px;
+        bottom: 60px;
+    }
+
+    #mail1 {
+        color: black;
+        font-size: larger;
+        position: relative;
+        bottom: 115px;
+        left: 325px;
+    }
+
+    #otp {
+        display: inline;
+        border-radius: 5px;
+        font-size: medium;
+        position: relative;
+        left: 5px;
+        margin: 5px;
+        width: 300px;
+        height: 50px;
+        bottom: 60px;
+    }

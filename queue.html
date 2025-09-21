@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Stacks & Queues — Module 3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 3: Stacks & Queues</h1>
+                <div class="small">LIFO, FIFO, implementation, common problems</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Concepts</h2>
+                <ul>
+                    <li>Stack: Last-In-First-Out. Use for DFS, parentheses matching.</li>
+                    <li>Queue: First-In-First-Out. Use for BFS, scheduling.</li>
+                    <li>Deque: double-ended queue for sliding window.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Examples</h2>
+                <h3>Valid parentheses (JS)</h3>
+                <pre class="code">function isValid(s){
+  const m = {')':'(',']':'[','}':'{'}, st = [];
+  for (let ch of s){
+    if ('([{'.includes(ch)) st.push(ch);
+    else {
+      if (st.pop() !== m[ch]) return false;
+    }
+  }
+  return st.length===0;
+}</pre>
+
+                <h3>BFS using queue (Python)</h3>
+                <pre class="code">from collections import deque
+def bfs(start):
+    q = deque([start])
+    visited = set([start])
+    while q:
+        node = q.popleft()
+        # process node
+        for nei in neighbors(node):
+            if nei not in visited:
+                visited.add(nei)
+                q.append(nei)</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Implement a min stack that returns min in O(1).</li>
+                    <li>Given daily temperatures, find for each day how many days to wait for a warmer temp (use stack).
+                    </li>
+                    <li>Implement queue with two stacks.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Solutions (brief)</h2>
+                <p>Min stack: keep a stack of current minimums or store pair (value, currentMin). Two-stack queue: push
+                    to inbox, pop from outbox; transfer when outbox empty.</p>
+            </section>
+
+            <div class="navlinks">
+                <a href="tree.html">Next: Trees & Graphs</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

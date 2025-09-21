@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dynamic Programming — Module 5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 5: Dynamic Programming</h1>
+                <div class="small">Memoization, tabulation, overlapping subproblems</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Overview</h2>
+                <p>Dynamic programming (DP) converts exponential recursive solutions into polynomial time using
+                    memoization or bottom-up tabulation. Two main properties: optimal substructure and overlapping
+                    subproblems.</p>
+            </section>
+
+            <section>
+                <h2>Patterns</h2>
+                <ul>
+                    <li>1D DP — linear sequence (e.g., Fibonacci, climbing stairs)</li>
+                    <li>2D DP — grid/substring (e.g., edit distance, longest common subsequence)</li>
+                    <li>Knapsack / DP over subsets</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Example — Fibonacci</h2>
+                <h3>Memoization (JS)</h3>
+                <pre class="code">function fib(n, memo = {}) {
+  if (n <= 1) return n;
+  if (memo[n]) return memo[n];
+  memo[n] = fib(n-1,memo) + fib(n-2,memo);
+  return memo[n];
+}</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Climbing stairs: number of ways to reach nth stair (1 or 2 steps at a time).</li>
+                    <li>Longest Increasing Subsequence (LIS) — O(n log n) solution (bonus) and O(n²) DP.</li>
+                    <li>0/1 Knapsack: maximize value given weight capacity.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Solutions (hints)</h2>
+                <ul>
+                    <li>Climb: fib-like DP or iterative loop storing dp[i] = dp[i-1] + dp[i-2].</li>
+                    <li>LIS: patience sorting / binary search approach gives O(n log n).</li>
+                    <li>Knapsack: classic DP with dp[w] or dp[i][w] depending on approach.</li>
+                </ul>
+            </section>
+
+            <div class="navlinks">
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

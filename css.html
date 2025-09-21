@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS Fundamentals — Module 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 2: CSS Fundamentals</h1>
+                <div class="small">Selectors, box model, flexbox, grid</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Core concepts</h2>
+                <ul>
+                    <li>Box model: margin, border, padding, content</li>
+                    <li>Specificity & cascade</li>
+                    <li>Flexbox for 1D layout, Grid for 2D</li>
+                    <li>Responsive units: %, rem, vw/vh</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Example: simple card (CSS)</h2>
+                <pre class="code">&lt;div class="card"&gt;
+  &lt;h3&gt;Title&lt;/h3&gt;
+  &lt;p&gt;Body text&lt;/p&gt;
+&lt;/div&gt;
+
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Build a responsive two-column layout that collapses to one column on mobile (use grid or flex).
+                    </li>
+                    <li>Center an element both vertically and horizontally.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Hints</h2>
+                <p>Use <code>display:grid; grid-template-columns: repeat(2,1fr)</code> and media queries to change to
+                    one column. For centering, use flexbox with
+                    <code>align-items:center; justify-content:center;</code>.
+                </p>
+            </section>
+
+            <div class="navlinks">
+                <a href="js.html">Next: JavaScript Essentials</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

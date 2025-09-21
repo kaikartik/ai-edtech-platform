@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #9500ff, #9500);
+        }
+
+        #head {
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #9500ff, #9500);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .course {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .course h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .modules {
+            list-style: none;
+        }
+
+        .modules li {
+            background: #f0f4f8;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+            cursor: pointer;
+        }
+
+        .modules li:hover {
+            background: #e1e9f2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: black;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Learning Page</h1>
+        <p id="head">Choose a course and start your journey</p>
+    </header>
+
+    <div class="container">
+        <!-- DSA Course -->
+        <div class="course">
+            <h2>DSA (Data Structures & Algorithms)</h2>
+            <ul class="modules">
+                <li id="mod1">Module 1: Arrays & Strings</li>
+                <li id="mod2">Module 2: Linked Lists</li>
+                <li id="mod3">Module 3: Stacks & Queues</li>
+                <li id="mod4">Module 4: Trees & Graphs</li>
+                <li id="mod5">Module 5: Dynamic Programming</li>
+            </ul>
+        </div>
+
+        <!-- Frontend Course -->
+        <div class="course">
+            <h2>Frontend Development</h2>
+            <ul class="modules">
+                <li id="mod6">Module 1: HTML Basics</li>
+                <li id="mod7">Module 2: CSS Fundamentals</li>
+                <li id="mod8">Module 3: JavaScript Essentials</li>
+                <li id="mod9">Module 4: Responsive Design</li>
+                <li id="mod10">Module 5: React.js Introduction</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Learning Platform | All rights reserved.
+    </footer>
+
+    <script src="learn.js"></script>
+</body>
+
+</html>

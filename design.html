@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Responsive Design — Module 4</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 4: Responsive Design</h1>
+                <div class="small">Media queries, mobile-first, fluid layouts</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Principles</h2>
+                <ul>
+                    <li>Mobile-first: style for small screens first, then enhance</li>
+                    <li>Use flexible units: rem, %, vw</li>
+                    <li>Media queries for breakpoints</li>
+                    <li>Test across devices (emulate with browser devtools)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Example</h2>
+                <pre class="code">/* mobile-first */
+.container{padding:16px}
+@media(min-width:768px){
+  .container{padding:28px}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+}</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Create a responsive navbar that becomes a hamburger menu on small screens.</li>
+                    <li>Build an image gallery that adjusts columns by viewport width.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Hints</h2>
+                <p>For hamburger: toggle a class to show/hide nav items; consider ARIA attributes for accessibility. For
+                    gallery: CSS grid with <code>grid-template-columns: repeat(auto-fit, minmax(200px,1fr))</code>.</p>
+            </section>
+
+            <div class="navlinks">
+                <a href="react.html">Next: React.js Introduction</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

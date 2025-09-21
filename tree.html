@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trees & Graphs — Module 4</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 4: Trees & Graphs</h1>
+                <div class="small">Binary trees, traversals, graph search, shortest paths</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Key concepts</h2>
+                <ul>
+                    <li>Tree traversals: preorder, inorder, postorder (recursive & iterative)</li>
+                    <li>BFS/DFS for graphs; visited set to prevent cycles</li>
+                    <li>Shortest paths: Dijkstra for non-negative weights, Bellman-Ford for negative edges</li>
+                    <li>Topological sort for DAGs</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Examples</h2>
+                <h3>Inorder traversal (Python recursive)</h3>
+                <pre class="code">def inorder(node):
+    if not node: return
+    inorder(node.left)
+    print(node.val)
+    inorder(node.right)</pre>
+
+                <h3>Dijkstra (JS — idea)</h3>
+                <pre class="code">// Use priority queue keyed by distance; relax edges until target found</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Find lowest common ancestor in a binary tree.</li>
+                    <li>Given an undirected graph, check if it's bipartite.</li>
+                    <li>Given edges of DAG, produce a topological ordering.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Solutions (hints)</h2>
+                <ul>
+                    <li>LCA: recursive search that returns node if it matches left/right presence; or preprocess with
+                        parent & depth + binary lifting.</li>
+                    <li>Bipartite: color with two colors during BFS; if conflict => not bipartite.</li>
+                    <li>Topological sort: Kahn's algorithm (indegree queue) or DFS postorder reverse.</li>
+                </ul>
+            </section>
+
+            <div class="navlinks">
+                <a href="dynamic.html">Next: Dynamic Programming</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

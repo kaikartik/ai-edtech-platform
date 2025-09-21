@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Arrays & Strings — Module 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 1: Arrays & Strings</h1>
+                <div class="small">Fundamentals • indexing • traversal • common problems</div>
+            </div>
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a>
+            </nav>
+        </header>
+
+        <article class="content">
+            <section class="section">
+                <h2>Introduction</h2>
+                <p>Arrays are contiguous collections of elements accessible by index. Strings are arrays of characters
+                    (language-dependent) and are among the most common data structures used for algorithmic problems.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Key concepts</h2>
+                <ul>
+                    <li>Indexing (0-based vs 1-based)</li>
+                    <li>Traversal & two-pointer technique</li>
+                    <li>Sliding window for subarray problems</li>
+                    <li>Immutable vs mutable strings</li>
+                    <li>Time complexity: O(n), O(n²) patterns</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Examples</h2>
+                <h3>Reverse an array (JS)</h3>
+                <pre class="code">// in-place reverse
+function reverseArray(a){
+  let i=0, j=a.length-1;
+  while(i<j){
+    [a[i], a[j]] = [a[j], a[i]];
+    i++; j--;
+  }
+  return a;
+}
+        </pre>
+
+                <h3>Check palindrome (Python)</h3>
+                <pre class="code">def is_palindrome(s):
+    return s == s[::-1]</pre>
+            </section>
+
+            <section class="section">
+                <h2>Common patterns & tips</h2>
+                <div class="kv">
+                    <div>Sliding window</div>
+                    <div>Two pointers</div>
+                    <div>Prefix sums</div>
+                    <div>Frequency map</div>
+                </div>
+            </section>
+
+            <section class="section exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Given array of ints, return maximum subarray sum (Kadane's algorithm).</li>
+                    <li>Given a string, find the length of the longest substring without repeating characters.</li>
+                    <li>Given two strings, check if one is an anagram of the other.</li>
+                </ol>
+            </section>
+
+            <section class="section solutions">
+                <h2>Solutions (brief)</h2>
+                <h3>Kadane (JS)</h3>
+                <pre class="code">function maxSubarray(arr){
+  let maxSoFar = -Infinity, cur = 0;
+  for (let x of arr){
+    cur = Math.max(x, cur + x);
+    maxSoFar = Math.max(maxSoFar, cur);
+  }
+  return maxSoFar;
+}</pre>
+
+                <h3>Longest substring w/o repeat (idea)</h3>
+                <p>Use sliding window + hashmap to track last seen positions — expand right, and if duplicate is inside
+                    window, move left.</p>
+
+                <h3>Anagram check (Python)</h3>
+                <pre class="code">from collections import Counter
+def is_anagram(a,b):
+    return Counter(a) == Counter(b)</pre>
+            </section>
+
+            <div class="navlinks">
+                <a href="linklist.html">Next: Linked Lists</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

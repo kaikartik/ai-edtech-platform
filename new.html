@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Local Websites</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        /* Main website (background) */
+        #mainSite {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Overlay website on the left */
+        #overlaySite {
+            position: absolute;
+            top: 0;
+            left: 1350px;
+            /* align to left */
+            width: 350px;
+            /* adjust width as needed */
+            height: 100%;
+            border: none;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main website (AI EdTech Professor) -->
+    <iframe id="mainSite" src="edu.html"></iframe>
+
+    <!-- Overlay website (AI Chatbot) -->
+    <iframe id="overlaySite" src="chat.html"></iframe>
+
+</body>
+
+</html>

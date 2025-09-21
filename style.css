@@ -1,0 +1,158 @@
+/* ===================
+   Global Styles
+=================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #a855f7, #f3e8ff);
+    color: #222;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===================
+   Header
+=================== */
+header {
+    background: #4c1d95;
+    color: white;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #c084fc;
+}
+
+/* ===================
+   Homepage Layout
+=================== */
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    left: 165px;
+    margin: 10px;
+    width: 500px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Fixed card width */
+    text-align: center;
+}
+
+/* Section Heading */
+section h2 {
+    margin-bottom: 1rem;
+    color: #4c1d95;
+}
+
+/* List Links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.6rem 0;
+}
+
+a {
+    margin: 100px;
+    text-decoration: none;
+    color: #4c1d95;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #9333ea;
+    text-decoration: underline;
+}
+
+/* ===================
+   Chapter Page Styles
+=================== */
+.content {
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.content h2 {
+    color: #4c1d95;
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin: 0.5rem 0 1rem;
+}
+
+.content ul {
+    margin: 1rem auto;
+    list-style: disc;
+    display: inline-block;
+    text-align: left;
+}
+
+pre {
+    background: #f3e8ff;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: left;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    color: #4c1d95;
+    font-size: 0.95rem;
+}
+
+/* ===================
+   Responsive
+=================== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>React.js Introduction — Module 5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 5: React.js Introduction</h1>
+                <div class="small">Components, state, props, lifecycle (hooks)</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Core ideas</h2>
+                <ul>
+                    <li>Component-based UI — small reusable pieces</li>
+                    <li>JSX — markup inside JavaScript</li>
+                    <li>Props (read-only) and state (mutable within component)</li>
+                    <li>Hooks: useState, useEffect, useRef</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Example: counter (React)</h2>
+                <pre class="code">import React, { useState } from 'react';
+
+export default function Counter(){
+  const [count, setCount] = useState(0);
+  return (
+    &lt;div&gt;
+      &lt;h3&gt;{count}&lt;/h3&gt;
+      &lt;button onClick={() =&gt; setCount(c =&gt; c + 1)}&gt;Increment&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Build a small CRUD todo app using local state and map over items.</li>
+                    <li>Refactor a class component to functional with hooks.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Notes</h2>
+                <p>Prefer functional components + hooks. Keep components small and focused. Lift state up when multiple
+                    children need it.</p>
+            </section>
+
+            <div class="navlinks">
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

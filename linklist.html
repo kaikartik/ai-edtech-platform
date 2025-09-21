@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Linked Lists — Module 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 2: Linked Lists</h1>
+                <div class="small">Singly, Doubly, operations, pointers</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section class="section">
+                <h2>Intro</h2>
+                <p>A linked list is a linear collection of nodes where each node stores data and a reference to the next
+                    (and optionally previous) node. Good when you need O(1) insert/delete at arbitrary positions given
+                    the node pointer.</p>
+            </section>
+
+            <section class="section">
+                <h2>Key operations</h2>
+                <ul>
+                    <li>Traversal (O(n))</li>
+                    <li>Insertion at head/tail/middle</li>
+                    <li>Deletion given node</li>
+                    <li>Reverse list (iterative & recursive)</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Examples</h2>
+                <h3>Reverse singly linked list (JS — iterative)</h3>
+                <pre class="code">function reverseList(head){
+  let prev = null, cur = head;
+  while(cur){
+    let next = cur.next;
+    cur.next = prev;
+    prev = cur;
+    cur = next;
+  }
+  return prev;
+}</pre>
+
+                <h3>Detect cycle (Python — Floyd's)</h3>
+                <pre class="code">def has_cycle(head):
+    slow = fast = head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow is fast:
+            return True
+    return False</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Merge two sorted linked lists (return merged head).</li>
+                    <li>Remove N-th node from end of list in one pass.</li>
+                    <li>Given head, palindrome check using O(1) extra space.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Solutions (hints)</h2>
+                <ul>
+                    <li>Merge: walk both lists and splice smaller nodes.</li>
+                    <li>Remove N-th: use two pointers with gap n.</li>
+                    <li>Palindrome: find middle, reverse second half, compare halves, restore if needed.</li>
+                </ul>
+            </section>
+
+            <div class="navlinks">
+                <a href="queue.html">Next: Stacks & Queues</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

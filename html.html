@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Basics — Module 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="chapter-header">
+            <div>
+                <h1>Module 1: HTML Basics</h1>
+                <div class="small">Structure, semantics, forms, accessibility</div>
+            </div>
+            <nav class="breadcrumbs"><a href="../index.html">Home</a></nav>
+        </header>
+
+        <article class="content">
+            <section>
+                <h2>Why HTML matters</h2>
+                <p>HTML defines the structure of web pages. Semantic HTML improves accessibility, SEO, and
+                    maintainability.</p>
+            </section>
+
+            <section>
+                <h2>Key elements</h2>
+                <ul>
+                    <li>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</li>
+                    <li>&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</li>
+                    <li>Forms: &lt;form&gt;, &lt;input&gt;, &lt;label&gt;, &lt;button&gt;</li>
+                    <li>Images &amp; media: &lt;img&gt; alt text, &lt;video&gt; controls</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Example: accessible form</h2>
+                <pre class="code">&lt;form action="/subscribe"&gt;
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input id="email" type="email" name="email" required /&gt;
+  &lt;button type="submit"&gt;Subscribe&lt;/button&gt;
+&lt;/form&gt;</pre>
+            </section>
+
+            <section class="exercise">
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Create a semantic blog post layout using &lt;article&gt;, &lt;header&gt;, &lt;section&gt;,
+                        &lt;footer&gt;.</li>
+                    <li>Build a form with validation and proper labels.</li>
+                </ol>
+            </section>
+
+            <section class="solutions">
+                <h2>Notes & Tips</h2>
+                <p>Always provide descriptive alt text for images, use headings in order (h1 → h2 ...), and prefer
+                    semantic tags over generic &lt;div&gt; when possible.</p>
+            </section>
+
+            <div class="navlinks">
+                <a href="css.html">Next: CSS Fundamentals</a>
+                <a href="learn.html">Back to Home</a>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
