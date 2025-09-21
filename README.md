@@ -107,7 +107,10 @@ Visit [http://localhost:3000](http://localhost:3000) or your configured port.
 
 ## 📸 Screenshots
 
-> 
+> https://github.com/kaikartik/ai-edtech-platform/blob/main/Ai%20EdTech.png
+> https://github.com/kaikartik/ai-edtech-platform/blob/main/chatbot.png
+> https://github.com/kaikartik/ai-edtech-platform/blob/main/courses.png
+> https://github.com/kaikartik/ai-edtech-platform/blob/main/loginpage.png
 
 ---
 
