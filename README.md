@@ -1,6 +1,6 @@
 # AI-Powered EdTech Platform with Interactive 3D AI Professor
 
-![AI EdTech Banner](https://your-image-link-here.com/banner.png)
+![AI EdTech Banner](f58664d6c437.jpg)
 
 ## 🚀 Overview
 
